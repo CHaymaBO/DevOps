@@ -11,5 +11,6 @@ public interface SessionService {
 	public Optional<Session> getById(int id);
 	public void delete(int id);
 	public List<Session> consulte();
+	public void recherche();
 
 }
