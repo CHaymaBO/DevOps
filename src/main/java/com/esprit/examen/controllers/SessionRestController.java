@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import com.esprit.examen.entities.Session;
 
 import java.util.List;
+import java.util.Optional;
 
 
 @RestController
@@ -31,8 +32,8 @@ public class SessionRestController {
 	}
 
 	@GetMapping("/session/{id}")
-	public Session getSession(@PathVariable("id") int id) throws Exception{
-		return sessionRepository.findById(id).orElseThrow(() -> new Exception());
+	public Optional<Session> getSession(@PathVariable("id") int id) {
+		return sessionRepository.findById(id);
 	}
 	@PutMapping("/updateSession/{id}")
 	public Response updateSession(@RequestBody Session session, @PathVariable Long id){

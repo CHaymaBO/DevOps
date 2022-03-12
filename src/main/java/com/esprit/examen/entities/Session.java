@@ -21,7 +21,7 @@ public class Session implements Serializable{
     Formateur formateur;
 	@ManyToMany
 	@JoinColumn(name = "cours_id",referencedColumnName = "id")
-	Set<Cours> cours;
+	private Set<Cours> cours;
 	
 	public int getId() {
 		return id;
@@ -81,7 +81,6 @@ public class Session implements Serializable{
 
 	public Session() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 }

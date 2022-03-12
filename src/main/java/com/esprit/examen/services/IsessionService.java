@@ -2,8 +2,7 @@ package com.esprit.examen.services;
 
 import com.esprit.examen.entities.Session;
 import com.esprit.examen.repositories.SessionRepository;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
 
 import org.springframework.stereotype.Service;
 
@@ -37,10 +36,6 @@ public class IsessionService implements SessionService{
         return sessionRepository.findAll();
     }
 
-
-    @Override
-    public void recherche() {
-    }
 
 
 

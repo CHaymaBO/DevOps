@@ -1,5 +1,6 @@
 package com.esprit.examen;
 
+import com.esprit.examen.entities.Formateur;
 import com.esprit.examen.entities.Response;
 import com.esprit.examen.entities.Session;
 import com.fasterxml.jackson.databind.ObjectMapper;
